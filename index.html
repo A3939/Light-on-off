@@ -1,0 +1,30 @@
+<!-- html starter template -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LED on/off</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="lamp-container">
+            <img src="./images/lamp.png" class="lamp">
+            <img src="./images/light.png" class="light" id="light">
+        </div>
+        <div class="switch">
+
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementById('btn');
+        var light = document.getElementById('light');
+        function toggleBtn() {
+            btn.classList.toggle('active')
+            light.classList.toggle('on')
+        }
+    </script>
+</body>
+</html>
